@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Division2ReconWebAPI", "Division2ReconWebAPI.csproj", "{56A93227-9736-4B04-906A-88F4BE29FD6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56A93227-9736-4B04-906A-88F4BE29FD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A93227-9736-4B04-906A-88F4BE29FD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A93227-9736-4B04-906A-88F4BE29FD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A93227-9736-4B04-906A-88F4BE29FD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF033BC9-19EA-4ECA-B8E5-A79A2D4473A2}
+	EndGlobalSection
+EndGlobal
