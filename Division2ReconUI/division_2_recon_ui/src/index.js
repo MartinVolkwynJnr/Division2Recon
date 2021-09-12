@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import { store } from './app/store';
+import configureStore, { history } from "./app/store";
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import Root from "./components/Root";
+
+const store = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Root store={store} history={history} />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

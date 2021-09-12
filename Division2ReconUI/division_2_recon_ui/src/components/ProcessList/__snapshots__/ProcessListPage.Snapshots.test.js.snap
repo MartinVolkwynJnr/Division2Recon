@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`check general display of snapshot change/update 1`] = `
+<div>
+  <div
+    className="form-group"
+  >
+    <label
+      htmlFor="searchInput"
+    >
+      Search
+    </label>
+    <div
+      className="field"
+    >
+      <input
+        className="form-control"
+        name="searchInput"
+        onInput={[Function]}
+        type="text"
+        value=""
+      />
+      
+    </div>
+  </div>
+  <button
+    onClick={[Function]}
+  >
+    Search CustomerName
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Search SensorData
+  </button>
+  <div>
+    <table
+      className="table table-striped table-bordered table-hover"
+    >
+      <thead>
+        <tr>
+          <th>
+            CustomerId
+          </th>
+          <th>
+            CustomerName
+          </th>
+          <th>
+            MachineNr
+          </th>
+          <th>
+            MachineId
+          </th>
+          <th>
+            MachineTypeSerial
+          </th>
+          <th>
+            Process
+          </th>
+          <th>
+            ProcessTime
+          </th>
+          <th>
+            SensorData
+          </th>
+          <th>
+            OnlineFrom
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

@@ -25,10 +25,23 @@ namespace Division2ReconWebAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsSetup",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+            });
             services.AddControllers();
             //services.AddScoped<IProcessesRepo, MockProcessesRepo>();
             services.AddScoped<IProcessesRepo, ProcessesRepo>();
+            
         }
+
+
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

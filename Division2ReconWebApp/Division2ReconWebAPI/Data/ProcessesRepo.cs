@@ -57,7 +57,7 @@ namespace Division2ReconWebAPI.Data
         public IEnumerable<Processes> SearchBySensorData(string sensorData)
         {
             var processes = readTextFile();
-            return processes.Where(pro => pro.SensorData.Equals(sensorData));
+            return processes.Where(pro => pro.SensorData.Contains(sensorData));
         }
     }
 }
