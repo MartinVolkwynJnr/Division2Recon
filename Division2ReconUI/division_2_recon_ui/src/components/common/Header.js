@@ -7,12 +7,8 @@ const Header = () => {
   return (
     <nav>
       <NavLink to="/" activeStyle={activeStyle} exact>
-        Processes List
+        View Full Processes List
       </NavLink>
-      {/* {" | "}
-      <NavLink to="/contacts" activeStyle={activeStyle}>
-        Contact List
-      </NavLink> */}
     </nav>
   );
 };

@@ -1,7 +1,7 @@
 import { handleResponse, handleError } from "./apiUtils";
 const baseUrl = "/api/processes";
 
-export function getProcesses() {
+export function getProcesses() {  
   return fetch(baseUrl)
     .then(handleResponse)
     .catch(handleError);

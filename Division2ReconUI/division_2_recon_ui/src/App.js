@@ -5,6 +5,7 @@ import ProcessListPage from './components/ProcessList/ProcessListPage';
 import ProcessPage from './components/Process/ProcessPage';
 import Header from "./components/common/Header";
 import PageNotFound from "./components/PageNotFound";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -8,12 +8,21 @@ function ProcessListPage() {
   const [searchString, setSearchString] = useState("");
 
   useEffect(() => {
-    getProcesses().then(_processes => setProcesses(_processes))
+    getProcesses().then(_processes => {
+      setProcesses(_processes);
+    });
   },[])
 
   function handleSearch(event) {
       setSearchString(event.target.value);
   }
+
+  function handleClearSearch(event) {
+    setSearchString("");
+    getProcesses().then(_processes => {
+      setProcesses(_processes);
+    });
+}
 
   function searchByCustomerName(){
     console.log("searchString searchByCustomerName",searchString);
@@ -47,6 +56,7 @@ function ProcessListPage() {
       />
       <button onClick={searchByCustomerName}>Search CustomerName</button>
       <button onClick={searchBySensorData}>Search SensorData</button>
+      <button onClick={handleClearSearch}>Clear Search</button>
       <ProcessList
         processes={processes}
       />
