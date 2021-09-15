@@ -1,4 +1,5 @@
 using Division2ReconWebAPI.Data;
+using Division2ReconWebAPI.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,7 +39,6 @@ namespace Division2ReconWebAPI
             services.AddControllers();
             //services.AddScoped<IProcessesRepo, MockProcessesRepo>();
             services.AddScoped<IProcessesRepo, ProcessesRepo>();
-            
         }
 
 

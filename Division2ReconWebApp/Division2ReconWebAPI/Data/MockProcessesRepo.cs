@@ -57,17 +57,32 @@ namespace Division2ReconWebAPI.Data
 
         public IEnumerable<Processes> SearchByCustomerName(string searchString)
         {
-            throw new NotImplementedException();
+            var processes = new List<Processes>
+            {
+                process1, process2, process3
+            };
+
+            return processes.Where(process => process.CustomerName == searchString);
         }
 
         public Processes GetProcess(string process)
         {
-            throw new NotImplementedException();
+            var processes = new List<Processes>
+            {
+                process1, process2, process3
+            };
+
+            return processes.FirstOrDefault(_process => _process.Process == process);
         }
 
         public IEnumerable<Processes> SearchBySensorData(string sensorData)
         {
-            throw new NotImplementedException();
+            var processes = new List<Processes>
+            {
+                process1, process2, process3
+            };
+
+            return processes.Where(process => process.SensorData == sensorData); ;
         }
     }
 }
